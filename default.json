@@ -4,6 +4,7 @@
     "branchConcurrentLimit": 3,
     "extends":[
         "config:best-practices",
-        ":semanticCommits"
+        ":semanticCommits",
+        "github>aquaproj/aqua-renovate-config#2.2.1"
     ]
 }
