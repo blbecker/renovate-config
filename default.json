@@ -20,10 +20,9 @@
             "automerge": true
         },
 {
-    "description": "Group non-major GitHub Actions updates",
+    "description": "Automerge non-major GitHub Actions updates",
     "matchManagers": ["github-actions"],
     "matchUpdateTypes": ["minor", "patch"],
-    "groupName": "github actions",
     "automerge": true
 },
 {
