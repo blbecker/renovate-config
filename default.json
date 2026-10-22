@@ -2,9 +2,22 @@
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "prConcurrentLimit": 3,
     "branchConcurrentLimit": 3,
-    "extends":[
+    "extends": [
         "config:best-practices",
         ":semanticCommits",
         "github>aquaproj/aqua-renovate-config#2.2.1"
+    ],
+    "packageRules": [
+        {
+            "description": "Group development dependency updates",
+            "matchDepTypes": ["devDependencies"],
+            "matchUpdateTypes": ["minor", "patch"],
+            "groupName": "development dependencies"
+        },
+        {
+            "description": "Automerge patch updates",
+            "matchUpdateTypes": ["patch"],
+            "automerge": true
+        }
     ]
 }
