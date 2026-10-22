@@ -27,7 +27,7 @@
 },
 {
     "description": "Automerge dependency pinning updates",
-    "matchUpdateTypes": ["pin", "pinDigest"],
+    "matchUpdateTypes": ["pin", "pinDigest"," digest"],
     "automerge": true
 }
     ]
