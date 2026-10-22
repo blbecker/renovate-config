@@ -3,5 +3,10 @@
     "extends": [
         "config:best-practices",
             ":semanticCommits"
-    ]
+    ],
+    "renovate-config": {
+        "managerFilePatterns": [
+            "/^default\\.json$/"
+        ]
+    }
 }
